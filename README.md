@@ -25,9 +25,13 @@ Antes de ejecutar la aplicación, asegúrate de tener instalado Python 3.x y las
 ## Instalación:
 
 1. **Clona este repositorio**:
+   
      git clone https://github.com/Wcastaneda-linares/Inundacion-HTTP.git
+   
      cd Inundacion-HTTP
 2. **Instala las dependencias: Ejecuta el siguiente comando para instalar todas las dependencias necesarias**:
+   
      pip install -r requirements.txt
 3. **Ejecuta la aplicación: Una vez instaladas las dependencias, puedes iniciar la aplicación ejecutando**:
+   
      python ataque.py
