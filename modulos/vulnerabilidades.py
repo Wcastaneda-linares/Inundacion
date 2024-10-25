@@ -3,6 +3,7 @@ import requests
 
 TIMEOUT = 20  # Tiempo de espera máximo en segundos
 
+#Función para verificar la vulnerabilidad de inyección SQL
 def verificar_inyeccion_sql(url):
     if not url.startswith("http://") and not url.startswith("https://"):
         url = "https://" + url
@@ -20,7 +21,7 @@ def verificar_inyeccion_sql(url):
 
     return "No se detectaron vulnerabilidades SQL."
 
-
+#Introducción de código en la página web
 def verificar_xss(url):
     if not url.startswith("http://") and not url.startswith("https://"):
         url = "https://" + url
@@ -38,7 +39,7 @@ def verificar_xss(url):
 
     return "No se detectaron vulnerabilidades XSS."
 
-
+#Verificación de la vulnerabilidad de inclusión de archivos locales
 def verificar_lfi(url):
     if not url.startswith("http://") and not url.startswith("https://"):
         url = "https://" + url
@@ -56,7 +57,7 @@ def verificar_lfi(url):
 
     return "No se detectaron vulnerabilidades LFI."
 
-
+#Verificación de la vulnerabilidad de inclusión de archivos remotos
 def verificar_rfi(url):
     if not url.startswith("http://") and not url.startswith("https://"):
         url = "https://" + url
@@ -74,7 +75,7 @@ def verificar_rfi(url):
 
     return "No se detectaron vulnerabilidades RFI."
 
-
+#Verificación de la vulnerabilidad de redirección abierta
 def verificar_open_redirect(url):
     if not url.startswith("http://") and not url.startswith("https://"):
         url = "https://" + url
@@ -92,7 +93,7 @@ def verificar_open_redirect(url):
 
     return "No se detectaron vulnerabilidades de Open Redirect."
 
-
+#Verificación de la vulnerabilidad de inyección de comandos
 def verificar_inyeccion_comandos(url):
     if not url.startswith("http://") and not url.startswith("https://"):
         url = "https://" + url
@@ -110,7 +111,7 @@ def verificar_inyeccion_comandos(url):
 
     return "No se detectaron vulnerabilidades de inyección de comandos."
 
-
+#Verificación de la vulnerabilidad de Directory Traversal
 def verificar_directory_traversal(url):
     if not url.startswith("http://") and not url.startswith("https://"):
         url = "https://" + url
